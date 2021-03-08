@@ -8,7 +8,7 @@
 //2. What is the difference between Var, Const and Let? Const and Let are
 // block-scoped, while Var isn't. Also, Const values can't be reassined, while
 // Let can be. Also Let var can't be declared again, while Var can be decla-
-//red again. 
+// red again. 
 
 
 const a = 4;
@@ -55,4 +55,37 @@ console.log(g); // > 10
 
 // a < (b || f) === !f && e !== c CHALLENGER DEFEATED! KO!
 
+
+//Answer Section 3,
+
+
+// 1. Is the code ... an infinite loop? Why or why not?
+// Yes, it is an infinite loop, because you're warning me to not run it,
+// meaning it's dangerous! Jokes aside, it is an infinite loop because,
+// I believe two things, if something is declared JS assumes it is true
+// (JS so naive) unless it's stated false, second, I am never adding a 
+// condition when to stop console.logging.
+
+// 2. Infinite loop 2
+// Is this an infinite loop? Why or why not?
+// Of course it is, it's called "Infinite loop 2", jokes aside! The var-
+// iable "runProgram" was declared as a constant. Meaning that even 
+// if we attempt to change it to "false" or to anything at all. It will
+// remain true forever, like my love for Nacho Cheese Fries from Taco 
+// Bell. 
+
+// Reading code beep beep.
+
+let letters = "A"; // variable "letters" equals "A"; (string). ---> same
+// sentence
+let i = 0; // variable "i" equals 0; (int). ---> same sentence
+
+while (i < 20) { // while variable "i" is less than 20 ---> same sentence
+	letters += "A"; // I knew that A would add itself, but didn't know the 
+    // proper logic ---> variable "letters" equals "letters" + "A" 
+	i++; // add one to variable "i" ---> same sentence
+}
+
+console.log(letters); // print letters ("A") 20 times was expecting vertical
+// prints ---> printed "A" 20 times horizontally.
 
