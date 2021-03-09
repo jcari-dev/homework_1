@@ -51,10 +51,11 @@ console.log(g); // > 10
 //be correct e.g. g = b + c; > 110.
 //3. I would get an error, saying "Invaled left-hand side in assigment expression".
 
-// NEW CHALLENGER APPROACHS a _ (b || f) _ !f && e _ c
+// NEW CHALLENGER APPROACHS a _ (b || f) _ !f && e _ c vvv
 
-// a < (b || f) === !f && e !== c CHALLENGER DEFEATED! KO!
+ a < (b || f) === !f && e !== c
 
+// CHALLENGER DEFEATED! KO! ^^^
 
 //Answer Section 3,
 
@@ -88,4 +89,80 @@ while (i < 20) { // while variable "i" is less than 20 ---> same sentence
 
 console.log(letters); // print letters ("A") 20 times was expecting vertical
 // prints ---> printed "A" 20 times horizontally.
+
+// Section 4.
+
+// Diff between for loop and while loop.
+
+// For loop it is used when you want to run code specifically x number of times.
+// While is used when you want to run code but you do not know how many times, 
+// you want to run it. For has built-in vars and While do not. 
+
+// Parts of a For loop 1. Initialization, 2. condition, 3. iteration.
+
+// For loop II
+
+
+ for (let i=0; i<1000; i++){
+console.log(i)
+}
+
+// NEW CHALLENGER APPROACHS vvv
+
+// Diff between \ and / \≧◡≦/!!
+// Forward slash / is used in URLs to specify the path, (\ can be used in Win
+// to specify path as well), and \ in programming allows the next character
+// to escape the format. 
+
+// CHALLENGER DEFEATED! KO! (maybe not sure, I think that's mostly it) ^^^
+
+
+// Code 999 to 0
+
+  for (let i=999; i>-1; i--){
+console.log(i)
+}
+
+// Code 1 to 10 along w/ i
+
+for (let i=0; i<10; i++){
+    console.log("The value of i is: " + i + " of 10");
+    }
+ 
+// NEW CHALLENGER APPROACHS ban concatenation invite interpolation vvv 
+
+for (let i=0; i<10; i++){
+    console.log(`The value of i is: ${i} of 10`);
+    }
+
+// CHALLENGER DEFEATED! KO! ^^^
+
+
+// Iteration 
+
+
+// print each element of the array
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (i=0; i<StarWars.length; i++){
+    console.log(StarWars[i]);
+}
+
+// print each element + the value of the array
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (i=0; i<StarWars.length; i++){
+    console.log(i+ " is the index value of " + StarWars[i]);
+}
+
+// NEW CHALLENGER APPROACHS! Print every second element!!! vvv
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (i=0; i<StarWars.length; i++){
+if (i % 2 == 0){
+    console.log(StarWars[i]);
+}
+}
+
+// CHALLENGER DEFEATED! ^^^
 
